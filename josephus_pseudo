@@ -1,0 +1,27 @@
+Josephus Pseudocode
+
+
+State Problem
+1. Get int from users for 'num_soldiers'
+2. Get a string 'solder_name' from user for 'num_soldiers' times
+3. Get int from user for frequency of soldiers to 'eliminate'
+4. Delete each eliminate-th soldier until only one remains
+	a. enqueue all soldiers
+	b. for soldiers from [0] : [eliminate-2]
+		i. dequeue soldier
+		ii. requeue soldier
+	c. soldier[eliminate-1]
+		iii. dequeue only
+5. Print the remaining soldier's name
+
+
+Data Structures
+- int 'num_soldiers'
+- varchar 'soldier_name' (n = num_soldiers)
+- int 'eliminate'
+- queue army
+
+
+Pseudocode
+
+

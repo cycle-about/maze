@@ -1,0 +1,31 @@
+MAZE PROBLEM
+	From a starting position provided by user in a 2x2 array of 0s and 1s, get to E location by moving to only spots with a '0'.
+	At the end, show either that there is no path, or mark the path taken with '+'
+
+INPUT
+- txt file of maze
+- user input (row, column) for starting point
+	
+
+OUTPUT
+- print the maze at start, with an S
+- print the maze at end, and either 'I am trapped', or 'I am free' along with the path taken in '+'
+
+
+DATA STRUCTURES
+- 2x2 matrix 'maze'
+- tuple 'start'
+- tuple 'position'
+- stack 'options'
+- array 'visited' (initialize all to 0)
+
+
+PSEUDO *INCPMPLETE*
+1. read in maze and start position
+2. look at 4 adjacent positions:
+	a. if 0 or E, push that position onto stack
+3. while stack not empty:
+	[if stack empty: print maze and 'I am trapped'
+	a. pop position from stack
+	b. mark that position with a +
+	c. 

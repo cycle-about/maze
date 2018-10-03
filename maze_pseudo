@@ -1,0 +1,20 @@
+while (move_options.empty() == false) {
+
+	String next_move = move_options.pop();
+
+	switch (next_move) {
+		case "up":
+			maze[row][col] = '+';			
+			up = valid_move(row-1, col, maze);
+			break;
+
+
+	}
+
+	// copy in the same if up == true block (without declares)
+
+}
+
+
+
+public static int move(int i, char[][] m);
